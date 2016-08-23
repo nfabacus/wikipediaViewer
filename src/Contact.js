@@ -1,14 +1,8 @@
 import React from 'react';
 
-class Contact extends React.Component {
-  render() {
-
-    return (
+const Contact = ({contact, item})=>
         <li>
-          {this.props.contact.name} {this.props.contact.phone}
+          {contact.name} {contact.phone} {item}
         </li>
-    )
-  }
-}
 
 export default Contact;
