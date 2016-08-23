@@ -2,14 +2,27 @@ import React from 'react';
 import {render} from 'react-dom';
 import ContactsList from './ContactsList';
 
-let contacts = {
-  name: 'Scott',
-  phone: '555 555 5555'
-}
+let contacts = [{
+  id: 1,
+  name: 'John',
+  phone: '123 1231 12312'
+}, {
+  id: 2,
+  name: 'Tom',
+  phone: '654 4641 65464'
+},{
+  id: 3,
+  name: 'Jeff',
+  phone: '543 4462 3345'
+},{
+  id: 4,
+  name: 'Bill',
+  phone: '123 4323 43242'
+}]
 
 class App extends React.Component {
   render() {
-    console.log(this.props.contacts);
+
     return (
       <div>
         <h1>Contacts List</h1>
