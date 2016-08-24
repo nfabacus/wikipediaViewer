@@ -10,3 +10,9 @@ This is just a kata for me to learn and practice basic coding/file structures an
 - event handlers
 - processing form
 - setting state
+
+# How to start the server
+Just type below in your terminal:
+```
+./node_modules/.bin/webpack-dev-server
+```
