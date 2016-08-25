@@ -10,6 +10,7 @@ This is just a kata for me to learn and practice basic coding/file structures an
 - event handlers
 - processing form
 - setting state
+- write functional stateless component for contact.
 
 # How to start the server
 Just type below in your terminal:

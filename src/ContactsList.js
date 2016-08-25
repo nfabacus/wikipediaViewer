@@ -1,4 +1,5 @@
 import React from 'react';
+import Contact from './Contact';
 
 class ContactsList extends React.Component {
 
@@ -6,13 +7,11 @@ class ContactsList extends React.Component {
 
     return(
       <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
+        {this.props.contacts.map((contact)=>{
+          return <Contact contact={contact} key={contact.id} />
+        })}
       </ul>
-
-    );
+    )
   }
 }
 
