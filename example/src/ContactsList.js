@@ -6,8 +6,13 @@ class ContactsList extends React.Component {
     super(props);
     this.state = {
       search: '',
-      contacts: props.contacts
+      contacts: props.contacts,
+      value: 0
     };
+  }
+
+  addOne() {
+    this.setState({value: this.state.value+=1});
   }
 
   updateSearch(event) {
@@ -35,7 +40,8 @@ class ContactsList extends React.Component {
     );
     return (
       <div>
-
+        <h2>{this.state.value}</h2>
+        <button onClick={this.addOne.bind(this)}>Click me!</button>
         <input type="text"
                placeholder="Search here"
                value={this.state.search}
