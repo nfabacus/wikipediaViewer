@@ -10,12 +10,25 @@ let contacts = [
 ]
 
 class App extends React.Component {
+  constructor(){
+    super();
+    this.state ={
+      search: ""
+    }
+  }
+
+  updateSearch(event){
+    this.setState({
+      search: event.target.value
+    });
+  }
 
   render(){
 
     return (
       <div>
         <h1>Simple React Contact List</h1>
+        <input type="text" value={this.state.search} onChange={this.updateSearch.bind(this)}></input>
         <ContactsList contacts = {this.props.contacts}/>
       </div>
 

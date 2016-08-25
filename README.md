@@ -5,7 +5,7 @@ This is just a kata for me to learn and practice basic coding/file structures an
 - I will delete codes inside the files in src in the root, and rewrite the code for practice.
 
 ## Main points to practice
-- rewrite the code for the React component ES6 classes (React.component as opposed to React.createClass)
+- rewrite the code for the React component ES6 classes (React.Component as opposed to React.createClass)
 - props and state
 - event handlers
 - processing form
