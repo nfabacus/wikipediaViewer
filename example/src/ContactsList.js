@@ -40,7 +40,6 @@ class ContactsList extends React.Component {
     );
     return (
       <div>
-        <h2>{this.state.value}</h2>
         <button onClick={this.addOne.bind(this)}>Click me!</button>
         <input type="text"
                placeholder="Search here"
