@@ -11,11 +11,9 @@ class Form extends React.Component {
     this.refs.name.value = '';
     this.refs.phone.value = '';
     this.props.onFormSubmit(obj);
-
   }
 
   render(){
-
 
     return(
       <form onSubmit={ this.takeFormInfo.bind(this) }>
@@ -23,7 +21,6 @@ class Form extends React.Component {
         Phone: <input type="text" ref="phone" />
         <button type="submit">Add a new contact</button>
       </form>
-
     )
   }
 }

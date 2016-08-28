@@ -8,8 +8,10 @@ This is just a kata for me to learn and practice basic coding/file structures an
 - rewrite the code for the React component ES6 classes (React.Component as opposed to React.createClass)
 - props and state
 - event handlers
+- processing input(search bar)
 - processing form
 - setting state
+- call back functions
 - write functional stateless component for contact.
 
 # How to start the server

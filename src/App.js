@@ -22,10 +22,6 @@ class App extends React.Component {
 
   }
 
-  textSearch(term){
-    this.setState({search: term});
-  }
-
   addContact(obj){
     this.setState({
       contacts: this.state.contacts.concat(obj)
@@ -42,7 +38,7 @@ class App extends React.Component {
         <Count />
         <br />
         <Form onFormSubmit={obj=>this.addContact(obj)}/>
-        <Searchbar onSearchTermChange={term => this.textSearch(term)}/>
+        <Searchbar onSearchTermChange={term =>this.setState({search: term})}/>
         <ContactsList contacts={filteredContacts}/>
       </div>
 
