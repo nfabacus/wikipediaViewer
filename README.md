@@ -9,6 +9,7 @@ This is just a kata for me to learn and practice basic coding/file structures an
 - props and state
 - event handlers
 - processing input(search bar)
+- import & use lodash for throttling search input
 - processing form
 - setting state
 - call back functions

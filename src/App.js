@@ -28,6 +28,19 @@ class App extends React.Component {
     });
   }
 
+  onDelete(item){
+    let filteredItem = this.state.contacts.filter(function(el){
+      console.log("elid!!!", el.id);
+      return el.id !== item;
+    });
+    console.log("delete it!!!", filteredItem);
+    this.setState({
+      contacts: filteredItem
+
+
+    });
+  }
+
   render(){
     let filteredContacts = this.state.contacts.filter((contact)=>{ return contact.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1 });
 
@@ -39,7 +52,7 @@ class App extends React.Component {
         <br />
         <Form onFormSubmit={obj=>this.addContact(obj)}/>
         <Searchbar onSearchTermChange={term =>this.setState({search: term})}/>
-        <ContactsList contacts={filteredContacts}/>
+        <ContactsList contacts={filteredContacts} onDelete={item=>this.onDelete(item)}/>
       </div>
 
     )

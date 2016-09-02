@@ -4,7 +4,6 @@ import ContactsList from './ContactsList';
 import Searchbar from './Searchbar';
 import Count from './Count';
 import Form from './Form';
-import _ from 'lodash';
 
 let contacts = [
   {id: 1, name: "John", phone: "12321 32132"},
@@ -23,10 +22,6 @@ class App extends React.Component {
 
   }
 
-  textSearch(term){
-    this.setState({search: term});
-  }
-
   addContact(obj){
     this.setState({
       contacts: this.state.contacts.concat(obj)
@@ -36,7 +31,6 @@ class App extends React.Component {
   render(){
     let filteredContacts = this.state.contacts.filter((contact)=>{ return contact.name.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1 });
 
-    const throttleSearch = _.debounce(term) => { this.textSearch(term) }, 300);
 
     return (
       <div>
@@ -44,7 +38,7 @@ class App extends React.Component {
         <Count />
         <br />
         <Form onFormSubmit={obj=>this.addContact(obj)}/>
-        <Searchbar onSearchTermChange={term => this.throttleSearch(term)}/>
+        <Searchbar onSearchTermChange={term =>this.setState({search: term})}/>
         <ContactsList contacts={filteredContacts}/>
       </div>
 
