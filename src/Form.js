@@ -19,7 +19,7 @@ class Form extends React.Component {
       <form onSubmit={ this.takeFormInfo.bind(this) }>
         Name: <input type="text" ref="name" />
         Phone: <input type="text" ref="phone" />
-        <button type="submit">Add a new contact</button>
+        <button className="waves-effect waves-light btn" type="submit">Add a new contact</button>
       </form>
     )
   }
