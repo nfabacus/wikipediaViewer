@@ -54,6 +54,8 @@ class App extends React.Component {
           <Form onFormSubmit={obj=>this.addContact(obj)}/>
           <Searchbar onSearchTermChange={term =>this.setState({search: term})}/>
           <ContactsList contacts={filteredContacts} onDelete={item=>this.onDelete(item)}/>
+          <br />
+          <a href="https://github.com/nfabacus/simple-react-contact-list">My GitHub Repo</a>
         </center>
       </div>
 
