@@ -47,12 +47,14 @@ class App extends React.Component {
 
     return (
       <div>
-        <h1>Simple React Contact List</h1>
-        <Count />
-        <br />
-        <Form onFormSubmit={obj=>this.addContact(obj)}/>
-        <Searchbar onSearchTermChange={term =>this.setState({search: term})}/>
-        <ContactsList contacts={filteredContacts} onDelete={item=>this.onDelete(item)}/>
+        <center>
+          <h1>Simple React App</h1>
+          <Count />
+          <br />
+          <Form onFormSubmit={obj=>this.addContact(obj)}/>
+          <Searchbar onSearchTermChange={term =>this.setState({search: term})}/>
+          <ContactsList contacts={filteredContacts} onDelete={item=>this.onDelete(item)}/>
+        </center>
       </div>
 
     )

@@ -1,7 +1,9 @@
-# Simple React Contact List
-This is just a kata for me to learn and practice basic coding/file structures and functionality of react.js.
+# Simple React App
+![alt tag](http://res.cloudinary.com/abacus/image/upload/v1473018221/simpleReactApp_uwsd93.png)
 
-- Example folder contains the finished code.
+This is just experimental coding for me to learn and practice basic coding/file structures and functionality of react.js.
+
+- Example folder contains the older versions of the code.
 - I will delete codes inside the files in src in the root, and rewrite the code for practice.
 
 ## Main points to practice
@@ -15,8 +17,16 @@ This is just a kata for me to learn and practice basic coding/file structures an
 - call back functions
 - write functional stateless component for contact.
 
-# How to start the server
+## Updates
+- Basic styling added using materialize-css and animate.css
+- Simple Express Server added.
+
+## How to start the dev server
 Just type below in your terminal:
 ```
 ./node_modules/.bin/webpack-dev-server
 ```
+
+## Deployment (in Heroku)
+Please check the app (my coding practice) in the below link.
+https://react-experiment-app.herokuapp.com/

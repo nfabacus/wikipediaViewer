@@ -29,10 +29,10 @@ class Count extends React.Component {
 
     return(
       <div>
-        <h2>{this.state.value}</h2>
-        <button className="waves-effect waves-light btn" onClick={this.addOne.bind(this)}>Add One</button>
-        <button className="waves-effect waves-light btn" onClick={this.takeOne.bind(this)}>Take One</button>
-        <button className="waves-effect waves-light btn" onClick={this.clearNum.bind(this)}>Clear</button>
+          <h2>{this.state.value}</h2>
+          <button className="waves-effect waves-light btn" onClick={this.addOne.bind(this)}>Add One</button>
+          <button className="waves-effect waves-light btn" onClick={this.takeOne.bind(this)}>Take One</button>
+          <button className="waves-effect waves-light btn" onClick={this.clearNum.bind(this)}>Clear</button>
       </div>
 
     )
