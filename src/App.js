@@ -1,24 +1,26 @@
 import React from 'react';
+
+import ReactFetch from 'react-fetch';
+
 import {render} from 'react-dom';
 import ContactsList from './ContactsList';
 import Searchbar from './Searchbar';
 import Count from './Count';
 import Form from './Form';
 
-let contacts = [
-  {id: 1, name: "John", phone: "12321 32132"},
-  {id: 2, name: "Tony", phone: "12321 32132"},
-  {id: 3, name: "Steve", phone: "12321 32132"},
-  {id: 4, name: "Bill", phone: "12321 32132"}
-];
 
 class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
       search: "",
-      contacts: props.contacts
+      contacts: []
     };
+
+    fetch('http://localhost:3000/contacts')
+      .then(response=> response.json())
+      .then(json=> this.setState({ contacts: json }))
+      .catch(err => console.error('parsing failed', err.toString()));
 
   }
 
@@ -30,10 +32,8 @@ class App extends React.Component {
 
   onDelete(item){
     let filteredItem = this.state.contacts.filter(function(el){
-      console.log("elid!!!", el.id);
       return el.id !== item;
     });
-    console.log("delete it!!!", filteredItem);
     this.setState({
       contacts: filteredItem
 
@@ -63,4 +63,4 @@ class App extends React.Component {
   }
 }
 
-render(<App contacts = {contacts}/>, document.getElementById("app"))
+render(<App />, document.getElementById("app"))

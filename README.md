@@ -20,6 +20,7 @@ This is just experimental coding for me to learn and practice basic coding/file 
 ## Updates
 - Basic styling added using materialize-css and animate.css
 - Simple Express Server added.
+- Installed react-fetch
 
 ## How to start the dev server
 Just type below in your terminal:
