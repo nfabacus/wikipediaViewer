@@ -23,11 +23,6 @@ class App extends React.Component {
       contacts: props.contacts
     };
 
-    //   fetch('http://localhost:3000/contacts')
-    //     .then(response=> response.json())
-    //     .then(json=> this.setState({ contacts: json }))
-    //     .catch(err => console.error('parsing failed', err.toString()));
-    //
   }
 
   addContact(obj){
