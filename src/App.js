@@ -1,7 +1,4 @@
 import React from 'react';
-
-import ReactFetch from 'react-fetch';
-
 import {render} from 'react-dom';
 import ContactsList from './ContactsList';
 import Searchbar from './Searchbar';
