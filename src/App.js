@@ -8,20 +8,26 @@ import Searchbar from './Searchbar';
 import Count from './Count';
 import Form from './Form';
 
+let contacts = [
+  {id: 1, name: "John", phone: "12321 32132"},
+  {id: 2, name: "Tony", phone: "12321 32132"},
+  {id: 3, name: "Steve", phone: "12321 32132"},
+  {id: 4, name: "Bill", phone: "12321 32132"}
+];
 
 class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
       search: "",
-      contacts: []
+      contacts: props.contacts
     };
 
-    fetch('http://localhost:3000/contacts')
-      .then(response=> response.json())
-      .then(json=> this.setState({ contacts: json }))
-      .catch(err => console.error('parsing failed', err.toString()));
-
+    //   fetch('http://localhost:3000/contacts')
+    //     .then(response=> response.json())
+    //     .then(json=> this.setState({ contacts: json }))
+    //     .catch(err => console.error('parsing failed', err.toString()));
+    //
   }
 
   addContact(obj){
@@ -61,4 +67,4 @@ class App extends React.Component {
   }
 }
 
-render(<App />, document.getElementById("app"))
+render(<App contacts = {contacts}/>, document.getElementById("app"))
