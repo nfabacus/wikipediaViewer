@@ -19,4 +19,5 @@ Just type below in your terminal:
 Then, go to http://localhost:8080/ in your browser.
 
 ## Deployment (in Heroku)
-To be deployed...
+Deployed at https://react-wikipedia-viewer.herokuapp.com/
+Please check it out.
