@@ -8,13 +8,14 @@ To make it a bit more challenging for me (so I can learn more), I am going to de
 I am starting from almost scratch apart from a skelton.
 
 ## Updates
-Getting started.
+Minimalist Wikipedia Viewer completed.
 
 ## How to start the dev server
 Just type below in your terminal:
 ```
 ./node_modules/.bin/webpack-dev-server
 ```
+Then, go to http://localhost:8080/ in your browser.
 
 ## Deployment (in Heroku)
 To be deployed...

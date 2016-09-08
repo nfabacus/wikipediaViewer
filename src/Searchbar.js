@@ -16,9 +16,9 @@ class Searchbar extends React.Component {
   render(){
 
     return(
-      <div>
-        <h3>Search Term:</h3>
-        <h4>{this.state.term}</h4>
+      <div className="searchView">
+        <h4>Search Term:</h4>
+        <h4 className='searchBox'>{this.state.term}</h4>
         <input type='text' placeholder="What would you like to search?" onChange={(event)=>this.textSearch(event.target.value)} />
       </div>
 

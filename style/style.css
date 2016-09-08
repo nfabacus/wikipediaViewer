@@ -6,3 +6,11 @@ input {
   width: 350px !important;
   font-size: 25px !important;
 }
+
+.searchView {
+  height: 177px;
+}
+
+.searchBox {
+  height: 40px;
+}
