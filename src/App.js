@@ -36,6 +36,7 @@ class App extends React.Component {
       <div>
         <center>
           <h1>Wikipedia Viewer</h1>
+          <a href='https://github.com/nfabacus/wikipediaViewer'> GitHub</a>
           <Searchbar onSearchTermChange={this.searchWiki.bind(this)}/>
           <ListView terms={this.state.searchResult}/>
         </center>

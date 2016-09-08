@@ -1,4 +1,5 @@
 # Wikipedia Viewer
+![alt tag](http://res.cloudinary.com/abacus/image/upload/v1473340571/Screen_Shot_2016-09-08_at_14.14.53_wmdilc.png)
 
 This is a simple Wikipedia Viewer, made with React.
 This is one of the challenges for FreeCodeCamp programme (https://www.freecodecamp.com/nfabacus).
